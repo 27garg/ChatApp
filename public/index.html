@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chatApp">
+<head>
+    <title>Chat</title>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBVrR9uDLoSWL1tKo199f5BsD_FSnTquS8",
+    authDomain: "fir-test-b555e.firebaseapp.com",
+    databaseURL: "https://fir-test-b555e.firebaseio.com",
+    projectId: "fir-test-b555e",
+    storageBucket: "fir-test-b555e.appspot.com",
+    messagingSenderId: "404709686348"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="node_modules/angularfire/dist/angularfire.js"></script>
+<script src="app.js"></script>
+
+</head>
+<body>
+    <div ng-view></div>
+    
+</body>
+</html>
